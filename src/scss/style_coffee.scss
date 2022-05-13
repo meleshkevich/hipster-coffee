@@ -9,6 +9,7 @@ html {
 // General Variables
 $background_light: #f8f9fa;
 $background_dark: #343a40;
+$link_blue: #0099ff;
   
 // Header styles
 header {
@@ -49,7 +50,7 @@ main {
 .coffee {
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 900px;
 
     &__title {
         font-size: 2.5em;
@@ -79,31 +80,39 @@ main {
     &__type {
         display: flex;
         flex-direction: column;
-        max-width: 47%;
+        max-width: 45%;
+        margin: 1em 0;
 
         &__title {
             background-color: #f0f1f2;
             font-size: 1.75em;
             letter-spacing: 0.125em;
             font-weight: 300;
+            height: 2em;
+            line-height: 2em;
+            padding-left: 0.5em;
         }
 
         &__pic {
             width: 100%;
         }
 
-        &__quickdesc {
-            font-size: 1em;
-            line-height: 2.25em;
-            font-weight: 300;
-            font-style: italic;
-        }
+        &__desc {
+            background-color: #f8f9fa;
 
-        &__fulldesc {
-            font-size: 1em;
-            line-height: 1.75em;
-            font-weight: 300;
-        }
+            &__quickdesc {
+                font-size: 1em;
+                line-height: 2.25em;
+                font-weight: 300;
+                font-style: italic;
+            }
+
+            &__fulldesc {
+                font-size: 1em;
+                line-height: 1.75em;
+                font-weight: 300;
+            }
+        }   
     }
 }
 
@@ -117,26 +126,26 @@ main {
     height: 21.75em;
     background-color: $background_dark;
 
-    &__menu {
-        display: flex;
-        flex-direction: row;
-        padding-top: 7em;
-        width: 30%;
-        display: flex;
-        justify-content: space-between;
+    .footer__menu {
+      display: flex;
+      flex-direction: row;
+      padding-top: 7em;
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
     }
-      
-    &__link {
+    
+    .footer__link {
         font-size: 1em;
         line-height: 28px;
         text-decoration: underline;
         color: $link_blue;
         font-weight: 300;
-
-        &_active {
+      
+        .footer__link_active {
             color: white;
             text-decoration: none;
-        }
+        } 
     }
 }
 
@@ -148,9 +157,9 @@ main {
     
     p {
         color: white;
-    }
+      }
     
-    a {
+      a {
         color: $link_blue;
-    }
+      }
 }
