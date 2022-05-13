@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+  
+html {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+// General Variables
+$background_light: #f8f9fa;
+$background_dark: #343a40;
+$link_blue: #0099ff;
+  
+// Header styles
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10em;
+    height: 11.5em;
+    background-color: $background_light;
+    .logo {
+      width: 10em;
+    }
+    .header__menu {
+      width: 300px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      a {
+        text-decoration: none;
+        font-weight: 300;
+        color: black;
+        margin-left: auto;
+      }
+    }
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+  }
+
+//   MAIN STYLES
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0 1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 58em;
+
+    &__title {
+        font-size: 2.5em;
+        letter-spacing: 0.1875em;
+        font-weight: 300;
+    }
+
+    &__text {
+        font-size: 1.25em;
+        line-height: 2.25em;
+        font-weight: 300;
+    }
+
+    &__picturebox {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__person {
+            display: flex;
+            flex-direction: column;
+            width: 13em;
+
+            &__img {
+                width: 13em;
+                height: 13em;
+                border-radius: 50%;
+                box-shadow: 1px 1px 3px 3px grey;
+                overflow: hidden;
+
+                & img{
+                    width: 100%;
+                }
+            }   
+
+            p {
+                text-align: center;
+                font-size: 1.25em;
+                font-weight: 700;
+                line-height: 1.25em;
+            }
+
+            &__title {
+                font-weight: 300;
+            }
+
+
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10em;
+    width: 100%;
+    height: 21.75em;
+    background-color: $background_dark;
+    .footer__menu {
+      display: flex;
+      flex-direction: row;
+      padding-top: 7em;
+      width: 400px;
+      display: flex;
+      justify-content: space-around;
+      @media (max-width: 768px) {
+          width: 100vw;
+      }
+      .footer__link {
+        font-size: 1em;
+        line-height: 28px;
+        text-decoration: underline;
+        color: $link_blue;
+        font-weight: 300;
+      }
+      .footer__link_active {
+        color: white;
+        text-decoration: none;
+      }
+    }
+    .hipstercoffee {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5em;
+      p {
+        color: white;
+      }
+      a {
+        color: $link_blue;
+      }
+    }
+  }
+.footer_img {
+    width: 800px;
+    margin-bottom: -50px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 768px) {
+        width: 80%;
+    }
+}
