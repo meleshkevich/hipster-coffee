@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    margin: 0px;
  
   }
   *,
@@ -8,13 +9,15 @@ html {
     box-sizing: inherit;
   }
 
-  $background_light: #f8f9fa;
+$background_light: #f8f9fa;
 $background_dark: #343a40;
+$link_blue: #0099ff;
 
 // Header styles
 body {
     font-family: "Roboto Condensed", Arial;
-    color: #343a40;
+    color: black;
+    margin: 0px;
 }
 header {
   display: flex;
@@ -23,7 +26,7 @@ header {
   align-items: center;
   padding: 0 10em;
   
-  height: 11.5em;
+  height: 12.5em;
   background-color: $background_light;
   .logo {
     width: 10em;
@@ -33,6 +36,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media (max-width: 768px) {
+        margin-bottom: 2em;
+    }
 
     a {
       text-decoration: none;
@@ -40,6 +46,9 @@ header {
       color: black;
       margin-left: auto;
     }
+    .header__menu_active {
+        font-weight: bold;
+      }
   }
 
   @media (max-width: 768px) {
@@ -57,6 +66,7 @@ header {
       @media (max-width: 768px) {
         width: auto;
         justify-content: center;
+        margin: 0px 20px;
       }
       
   }
@@ -64,6 +74,7 @@ header {
   table {
       width: 100%;
   }
+
 
   .menu_coffee {
       display: flex;
@@ -92,3 +103,76 @@ header {
   h3 {
       font-weight: 300;
   }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10em;
+    width: 100%;
+    height: 21.75em;
+    background-color: $background_dark;
+    .footer__menu {
+      display: flex;
+      flex-direction: row;
+      padding-top: 7em;
+      width: 400px;
+      display: flex;
+      justify-content: space-around;
+
+      @media (max-width: 768px) {
+          width: 100vw;
+      }
+      .footer__link {
+        font-size: 1em;
+        line-height: 28px;
+        text-decoration: underline;
+        color: $link_blue;
+        font-weight: 300;
+      }
+      .footer__link_active {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  
+    .hipstercoffee {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5em;
+      p {
+        color: white;
+      }
+      a {
+        color: $link_blue;
+      }
+    }
+  }
+
+.footer_img {
+    width: 800px;
+    margin-bottom: -50px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 768px) {
+        width: 80%;
+    }
+ 
+    
+}
+
+.menu__table_price {
+    text-align: right;
+}
+
+.menu__image {
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+ 
+}
