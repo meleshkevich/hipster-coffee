@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+  
+html {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+// General Variables
+$background_light: #f8f9fa;
+$background_dark: #343a40;
+  
+// Header styles
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10em;
+    width: 100%;
+    height: 11.5em;
+    background-color: $background_light;
+    
+    .logo {
+      width: 10em;
+    }
+    
+    .header__menu {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+  
+      a {
+        text-decoration: none;
+        font-weight: 300;
+        color: black;
+      }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.coffee {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+
+    &__title {
+        font-size: 2.5em;
+        letter-spacing: 0.1875em;
+        font-weight: 300;
+    }
+
+    &__text {
+        font-size: 1.25em;
+        line-height: 2.25em;
+        font-weight: 300;
+    }
+
+    &__extra {
+        font-size: 1em;
+        line-height: 2.25em;
+        font-weight: 300;
+    }
+}
+
+.coffees {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__type {
+        display: flex;
+        flex-direction: column;
+        max-width: 47%;
+
+        &__title {
+            background-color: #f0f1f2;
+            font-size: 1.75em;
+            letter-spacing: 0.125em;
+            font-weight: 300;
+        }
+
+        &__pic {
+            width: 100%;
+        }
+
+        &__quickdesc {
+            font-size: 1em;
+            line-height: 2.25em;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        &__fulldesc {
+            font-size: 1em;
+            line-height: 1.75em;
+            font-weight: 300;
+        }
+    }
+}
+
+//Footer styles
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10em;
+    width: 100%;
+    height: 21.75em;
+    background-color: $background_dark;
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        padding-top: 7em;
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+    }
+      
+    &__link {
+        font-size: 1em;
+        line-height: 28px;
+        text-decoration: underline;
+        color: $link_blue;
+        font-weight: 300;
+
+        &_active {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.hipstercoffee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    
+    p {
+        color: white;
+    }
+    
+    a {
+        color: $link_blue;
+    }
+}
