@@ -12,18 +12,61 @@
     <title>Hipster Coffee Shop</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
+    <header class="header">
+      <div class="header__logo">
         <img src="/img/logo.svg" alt="logo coffee" />
       </div>
       <nav class="header__menu">
-        <a href="#" class="header__menu_home">Home</a>
-        <a href="#" class="header__menu_menu">Menu</a>
-        <a href="#" class="header__menu_coffee">Coffee</a>
-        <a href="#" class="header__menu_story">Our story</a>
+        <a href="#" class="header__link header__link_active">Home</a>
+        <a href="#" class="header__link">Menu</a>
+        <a href="#" class="header__link">Coffee</a>
+        <a href="#" class="header__link">Our story</a>
       </nav>
     </header>
-    <main>Main container to put content</main>
-    <footer>Some footer</footer>
+    <!-- Home page -->
+    <main>
+      <section class="home">
+        <h1>Generic Hipster Coffee</h1>
+        <h2>Specialty coffee, fresh food & local community.</h2>
+        <img src="/img/counter.jpg" alt="coffee shop counter" />
+        <div class="contact">
+          <div class="contact__item contact__item_hours">
+            <p>Opening hours</p>
+            <p>
+              sunday to thursday: 8 am to 11 pm friday to saturday: 8 am to 1 am
+            </p>
+          </div>
+          <div class="contact__item contact__item_book">
+            <p>Book a table</p>
+            <p>Call +1 415-321-4567</p>
+          </div>
+          <div class="contact__item contact__item_address">
+            <p>Address</p>
+            <p>321 Ivy St.<br />San Francisco, CA 94102</p>
+          </div>
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1306.8943379041675!2d-122.4241346655692!3d37.77719762252053!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580989a43e76d%3A0x45f1b189ee3b07b3!2s321%20Ivy%20St%2C%20San%20Francisco%2C%20CA%2094102%2C%20USA!5e0!3m2!1sen!2scz!4v1652440363898!5m2!1sen!2scz"
+        >
+        </iframe>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <nav class="footer__menu">
+        <a href="#" class="footer__link footer__link_active">Home</a>
+        <a href="#" class="footer__link">Menu</a>
+        <a href="#" class="footer__link">Coffee</a>
+        <a href="#" class="footer__link">Our story</a>
+      </nav>
+      <div class="hipstercoffee">
+        <p>#HIPSTERMAKECOFFEE</p>
+        <p>
+          Follow us on <a href="#">Twitter</a> and <a href="#"> Instagram</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
