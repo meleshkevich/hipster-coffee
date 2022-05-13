@@ -80,9 +80,15 @@ main {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-
     .contact__item {
       width: 28%;
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      .contact__item {
+        width: 70%;
+      }
     }
     & .contact__item p:nth-child(1) {
       font-size: 1.5em;
@@ -98,6 +104,7 @@ main {
     }
   }
 }
+
 iframe {
   width: 100%;
   height: 450px;
@@ -113,14 +120,16 @@ footer {
   width: 100%;
   height: 21.75em;
   background-color: $background_dark;
-
   .footer__menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     padding-top: 7em;
     width: 400px;
-
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 768px) {
+      width: 100vw;
+    }
     .footer__link {
       font-size: 1em;
       line-height: 28px;
@@ -144,5 +153,15 @@ footer {
     a {
       color: $link_blue;
     }
+  }
+}
+.footer_img {
+  width: 800px;
+  margin-bottom: -50px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 768px) {
+    width: 80%;
   }
 }
