@@ -7,9 +7,10 @@ html {
 // General Variables
 $background_light: #f8f9fa;
 $background_dark: #343a40;
+$link_blue: #0099ff;
 
 // Header styles
-header {
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -18,10 +19,12 @@ header {
   width: 100%;
   height: 11.5em;
   background-color: $background_light;
-  .logo {
+
+  &__logo {
     width: 10em;
   }
-  .header__menu {
+
+  &__menu {
     width: 30%;
     display: flex;
     justify-content: space-between;
@@ -30,6 +33,54 @@ header {
       text-decoration: none;
       font-weight: 300;
       color: black;
+    }
+  }
+  .header__link_active {
+    font-weight: bold;
+  }
+}
+
+// Home styles
+
+//Footer styles
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10em;
+  width: 100%;
+  height: 21.75em;
+  background-color: $background_dark;
+  .footer__menu {
+    display: flex;
+    flex-direction: row;
+    padding-top: 7em;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    .footer__link {
+      font-size: 1em;
+      line-height: 28px;
+      text-decoration: underline;
+      color: $link_blue;
+      font-weight: 300;
+    }
+    .footer__link_active {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .hipstercoffee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    p {
+      color: white;
+    }
+    a {
+      color: $link_blue;
     }
   }
 }
