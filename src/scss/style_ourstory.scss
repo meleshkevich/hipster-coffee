@@ -127,6 +127,22 @@ main {
     }
 }
 
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+
+  &__box {
+    width: 40em;
+
+    &__textarea {
+      width: 40em;
+      height: 20em; 
+    }
+  }
+}
+
 footer {
     display: flex;
     flex-direction: column;
