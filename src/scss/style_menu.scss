@@ -1,0 +1,94 @@
+html {
+    box-sizing: border-box;
+ 
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  $background_light: #f8f9fa;
+$background_dark: #343a40;
+
+// Header styles
+body {
+    font-family: "Roboto Condensed", Arial;
+    color: #343a40;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10em;
+  
+  height: 11.5em;
+  background-color: $background_light;
+  .logo {
+    width: 10em;
+  }
+  .header__menu {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      font-weight: 300;
+      color: black;
+      margin-left: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+      flex-direction: column;
+  }
+}
+
+  .menu {
+      width: 800px;
+      margin: 0px auto;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      font-weight: 300;
+      @media (max-width: 768px) {
+        width: auto;
+        justify-content: center;
+      }
+      
+  }
+
+  table {
+      width: 100%;
+  }
+
+  .menu_coffee {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @media (max-width: 786px) {
+          flex-direction: column;
+      }
+  }
+
+
+  .menu__columm {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      @media (max-width: 768px) {
+          width: 100%;
+      }
+  }
+
+  h2 {
+      font-weight: 300;
+  }
+
+  h3 {
+      font-weight: 300;
+  }
