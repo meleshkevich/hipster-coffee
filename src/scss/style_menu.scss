@@ -54,20 +54,18 @@ header {
   }
 }
 
-  .menu {
-      width: 800px;
-      margin: 0px auto;
-      padding: 0px;
-      display: flex;
-      flex-direction: row;
-      font-weight: 300;
-      font-size: 0.75em;
-      @media (max-width: 768px) {
-        width: auto;
-        justify-content: center;
-        margin: 0px 20px;
-      }
-      
+.menu {
+  width: 800px;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  font-weight: 300;
+  font-size: 0.75em;
+  @media (max-width: 768px) {
+    width: auto;
+    justify-content: center;
+    margin: 0px 20px;
   }
 }
 
@@ -75,41 +73,39 @@ table {
   width: 100%;
 }
 
-  .menu__maincolumm {
-    display: flex;
-    flex-direction: column;
-    margin-right: 0px;
-    width: 45%;
-    @media (max-width: 768px) {
-        width: 100%;
-      
-    }
+.menu__maincolumm {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0px;
+  width: 45%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
   .menu_coffee {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      @media (max-width: 786px) {
-          flex-direction: column;
-      }
-  }
-.menu__items {
-    width: 100%;
-}
-
-h2 {
-  font-weight: 300;
-}
-
-  }
-  .menu__columm {
-      display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: 786px) {
       flex-direction: column;
-      width: 50%;
-      @media (max-width: 768px) {
-          width: 100%;
-      }
+    }
   }
+  .menu__items {
+    width: 100%;
+  }
+
+  h2 {
+    font-weight: 300;
+  }
+}
+.menu__columm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
 
 footer {
   display: flex;
@@ -157,16 +153,14 @@ footer {
   }
 }
 
-  .whole_menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    @media (max-width: 768px) {
-        flex-direction: column;
-    }
-
-    
+.whole_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .footer_img {
@@ -181,22 +175,19 @@ footer {
 }
 
 .menu__table_price {
-    @media (max-width: 768px) {
-        text-align: right;
-    }
-    
+  @media (max-width: 768px) {
+    text-align: right;
+  }
 }
 
 .menu__image {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    @media (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-       
-    }
- 
+    justify-content: center;
+  }
 }
