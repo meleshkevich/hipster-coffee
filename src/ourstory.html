@@ -44,21 +44,40 @@
                     <p class="container__picturebox__person__title">Barrista</p>
                 </div>
             </div>
-            <div class="form">
-              <form action="https://classes.codingbootcamp.cz/assets/classes/request-visualization/script.php" method="get">
-                <p>WE VALUE YOUR COMMENTS</p>
-                <p>Please contact us using this form:</p>
-                <div class="form_box">
-                  <label for="name">Name: </label>
-                  <input id="name" type="text"> <br>
-                  <label for="email">Email: </label>
-                  <input id="email" type="email">
-                  <p>Message:</p>
-                  <input class="form__box__textarea" type="textarea"><br>
-                  <input class="form__box__submit" type="submit">
-                </div>
-              </form>
+      <div class="form_container">
+        <form action="action_page.php">
+           <h2>We are happy to hear from you!</h2>
+          <div class="row">
+           
+            <div class="col-25">
+              <label for="fname">Your Name</label>
             </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Your mail</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your e-mail..">
+            </div>
+          </div>
+         
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Subject</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Your message..." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+    </div>
         </section>
     </main>
     <footer class="footer">
